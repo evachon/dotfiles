@@ -12,7 +12,7 @@ Installation
 
   2. Installation
 
-        ./install
+        ./install.sh
 
 Actually, this script only install my vim's configuration and his addons. It create links between the git clone and your ~/.vimrc and ~/.vim. It also compile Command-T however, you may be ask to install some tools and re-run the script to complete the process.
 
