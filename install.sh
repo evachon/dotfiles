@@ -52,17 +52,14 @@ if [ ! -d $COMMANDT_INSTALL_FOLDER ];then
   echo "You must run ./install vim first."
   exit
 fi
-if [ $(which ruby) ];then
-  if [[ ! $(ruby --version) == *$RUBY_VERSION_COMMANDT* ]];then
-    if [ $(which rvm) ];then
-      rvm use $RUBY_VERSION_COMMANDT > /dev/null
-      if [[ ! $(ruby --version) == *$RUBY_VERSION_COMMANDT* ]];then
-        RUBY_GOOD_VERSION=false
-      fi
+if [[ ! $(ruby --version) == *$RUBY_VERSION_COMMANDT* ]];then
+  if [ $(which rvm) ];then
+    rvm use $RUBY_VERSION_COMMANDT > /dev/null
+    if [[ ! $(ruby --version) == *$RUBY_VERSION_COMMANDT* ]];then
+      RUBY_GOOD_VERSION=false
     fi
   fi
 else
-  echo "FALSEFALSEFALSE"
   RUBY_GOOD_VERSION=false
 fi
 
