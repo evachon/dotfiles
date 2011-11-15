@@ -8,7 +8,7 @@ Installation
 
   1. Checkout from git
 
-        git clone --recursive git://github.com/evachon/dotfiles.git
+        git clone --recursive git@github.com:evachon/dotfiles.git
 
   2. Installation
 
