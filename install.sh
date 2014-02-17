@@ -2,7 +2,7 @@
 DEST_DIR=$HOME
 INSTALL_SCRIPT_DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 FILES_TO_LINK=
-RUBY_VERSION_COMMANDT=1.8.7
+RUBY_VERSION_COMMANDT=1.8.7 
 
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
